@@ -14,3 +14,8 @@ Run java:
 	cd target/
 	    java -jar telegram-bot-0.0.1-SNAPSHOT.jar 
 
+	    а можно без application.properties:
+
+	    java -Dbot.proxy.host=127.0.0.1 -Dbot.proxy.port=8080  -jar telegram-bot-0.0.1-SNAPSHOT.jar
+
+
