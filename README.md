@@ -1,2 +1,2 @@
-# telegramExcamle
+# telegramExample
 Example for Telegram
