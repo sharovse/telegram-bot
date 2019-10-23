@@ -12,22 +12,21 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 @Component
-public class MyBot1 extends TelegramLongPollingBot {
-	static Logger log = LoggerFactory.getLogger(MyBot1.class);
+public class EchoBot extends TelegramLongPollingBot {
+	static Logger log = LoggerFactory.getLogger(EchoBot.class);
 	
-	@Value("${bot.token}")
+	@Value("${bot.echo.token}")
 	private String botToken;
-	@Value("${bot.user}")
+	@Value("${bot.echo.user}")
 	private String botUser;
 
 	@Autowired
-	public MyBot1(DefaultBotOptions options) {
+	public EchoBot(DefaultBotOptions options) {
 		super(options);
 	}
 
 	@Override
 	public void onUpdateReceived(Update update) {
-		log.debug("income {}",update);
 		if (update.hasMessage() && update.getMessage().hasText()) {
 	        SendMessage message = new SendMessage() 
 	                .setChatId(update.getMessage().getChatId())

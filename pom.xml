@@ -7,7 +7,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.2.0.RELEASE</version>
-		<relativePath /> <!-- lookup parent from repository -->
+		<relativePath />
 	</parent>
 	<groupId>ru.sharovse</groupId>
 	<artifactId>telegram-bot</artifactId>
@@ -17,6 +17,7 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		<telegrambots.version>4.4.0.1</telegrambots.version>
 	</properties>
 
 	<dependencies>
@@ -40,14 +41,14 @@
 		<dependency>
 			<groupId>org.telegram</groupId>
 			<artifactId>telegrambots</artifactId>
-			<version>4.4.0.1</version>
+			<version>${telegrambots.version}</version>
 		</dependency>
-<!-- 		<dependency>
-			<groupId>org.telegram</groupId>
-			<artifactId>telegrambots-abilities</artifactId>
-			<version>3.6.1</version>
-		</dependency>
- -->		<dependency>
+		 <dependency>
+            <groupId>org.telegram</groupId>
+            <artifactId>telegrambotsextensions</artifactId>
+            <version>${telegrambots.version}</version>
+        </dependency>
+		<dependency>
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
 			<version>23.0</version>
