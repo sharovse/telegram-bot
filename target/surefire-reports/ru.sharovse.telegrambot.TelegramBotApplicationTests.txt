@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: ru.sharovse.telegrambot.TelegramBotApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 62.537 s <<< FAILURE! - in ru.sharovse.telegrambot.TelegramBotApplicationTests
+contextLoads  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'initTelegramBotsApi': Invocation of init method failed; nested exception is org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error removing old webhook
+Caused by: org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error removing old webhook
+Caused by: org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Unable to deserialize response
+Caused by: com.fasterxml.jackson.core.JsonParseException: 
+Unexpected character ('<' (code 60)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"<html>
+<head><title>504 Gateway Time-out</title></head>
+<body bgcolor="white">
+<center><h1>504 Gateway Time-out</h1></center>
+<hr><center>nginx/1.13.12</center>
+</body>
+</html>
+"; line: 1, column: 2]
+
