@@ -12,8 +12,6 @@ import org.telegram.telegrambots.meta.ApiContext;
 
 @Configuration
 public class Config {
-	@Value("${bot.url}") 
-	String url;
 
 	@Value("${bot.proxy.host}") 
 	String proxyHost;
@@ -25,7 +23,7 @@ public class Config {
 	boolean proxy;
 	
 	@Bean
-	DefaultBotOptions createBotOptions() {
+	DefaultBotOptions initBotsApi() {
 		ApiContextInitializer.init();
 		DefaultBotOptions botOptions = ApiContext.getInstance(DefaultBotOptions.class);
 		if(proxy) {
