@@ -1,4 +1,8 @@
+ru/sharovse/telegrambot/bots/CommandBot.class
+ru/sharovse/telegrambot/ReesterBots.class
+ru/sharovse/telegrambot/Application.class
+ru/sharovse/telegrambot/bots/commands/HelloCommand.class
+ru/sharovse/telegrambot/services/Emoji.class
+ru/sharovse/telegrambot/bots/commands/HelpCommand.class
 ru/sharovse/telegrambot/Config.class
-ru/sharovse/telegrambot/TelegramBotApplication.class
-ru/sharovse/telegrambot/InitTelegramBotsApi.class
-ru/sharovse/telegrambot/bots/MyBot1.class
+ru/sharovse/telegrambot/bots/EchoBot.class
